@@ -2,50 +2,79 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    color: #5e5e5f;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/***************logo*******************/
+.fa-brands.fa-instagram {
+    display: flex;
+    font-size: 2rem; /* Aumenta el tamaño del icono (ajústalo según lo que necesites) */
+    position: absolute; /* Utiliza posicionamiento absoluto */
+    top: 50%; /* Centra verticalmente el icono */
+    right: 20px; /* Lo posiciona 20px desde el borde derecho de la pantalla */
+    transform: translateY(-50%); /* Alinea perfectamente en el centro vertical */
+}
+.instagram-link i {
+    color: rgb(93, 21, 134); /* Morado Instagram */
+    font-size: 2rem; /* Ajusta el tamaño del ícono */
+    text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+    transition: color 0.3s ease; /* Para un efecto suave cuando se pase el mouse */
+}
+
+.instagram-link i:hover {
+    color: #9B4DFF; /* Un tono de morado más claro al pasar el mouse */
+}
+
+
+
+
+
 
 /*************************HEADER**************************/
 header {
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(93, 21, 134);
     text-align: center;
-    padding: 0.8rem;
+    padding: 5px;
     width: 100%;
+    position: relative; 
 }
 
 /************************************************* MAIN*******************************/
 main {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar contenido */
+    /*align-items: center; /* Centrar contenido */
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: #000000;
+    font-size:  1.8rem;
+    color: #3f0a7c;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 h2 {
-    color: #000000;
+    color: rgb(93, 21, 134)!important;
     margin-bottom: 10px;
 }
 
 
 /************************************CARRUSEL*************************************/
+#carruselIndex {
+    margin-top: -30px; 
+}
+
+
 
 span{
     color: #000000;
@@ -93,8 +122,8 @@ span{
 
 /*titulo carrusel abajo*/
 #tituloCarrusel{
-    color: white;
-    font-size: 1rem;
+    
+    font-size: 1.2rem ;
     font-weight: bold;
     text-align: center;
 }
@@ -102,7 +131,7 @@ span{
 .carousel-indicators button {
     width: 34px !important;  
     height: 10px !important;
-    background-color: #111111 !important; /* Color de la barra */
+    background-color:rgb(93, 21, 134) !important; /* Color de la barra */
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -110,7 +139,7 @@ span{
     top: 50%; /* Centrado vertical */
     transform: translateY(-8%); /* Ajuste para centrar completamente las flechas */
     font-size: 1rem; /* Ajusta el tamaño de las flechas */
-    color: rgb(2, 0, 0); /* Asegura que las flechas sean visibles */
+    color:rgb(93, 21, 134) !important; /* Asegura que las flechas sean visibles */
     background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad */
     border-radius: 50%; /* Flechas redondas */
     padding: 10px;

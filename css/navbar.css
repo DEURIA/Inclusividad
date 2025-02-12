@@ -1,7 +1,7 @@
 /* NAVBAR ACCESIBLE */
 .navbar {
-    padding: 10px;
-    background-color: #3f148f !important;
+   
+    background-color: rgb(93, 21, 134) !important;
 }
 .navbar-nav {
     width: 100%;
@@ -10,18 +10,18 @@
 }
 
 .navbar.bg-body-tertiary {
-    background-color: #000000 !important;
+    background-color: #ffffff !important;
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color:  rgb(93, 21, 134) ;
     font-weight: bold;
     transition: background 0.10s ease;
 }
 
 .navbar .active {
     background-color: #fafafa; /* Fondo amarillo */
-    color: #3f148f; /* Texto morado */
+    color: #cfcad8; /* Texto morado */
     font-weight: bold; /* Resaltar el texto */
     border-radius: 2px;
     padding: 8px 12px;
@@ -42,7 +42,7 @@
 /* Foco visible SOLO cuando se usa teclado */
 .navbar a:focus-visible {
     background-color: #6c04f5;
-    color: rgb(7, 0, 0);
+    color:  #000000; /*esto es de la letra en el hamburguesa*/
     outline: 2px solid black;           
 }
 
