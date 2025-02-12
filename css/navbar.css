@@ -1,42 +1,65 @@
-/* Navegación accesible */
+/* NAVBAR ACCESIBLE */
 .navbar {
-    background-color: #222;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #3f148f !important;
     padding: 0.5rem 0;
+    gap: 10px;
+    flex-wrap: nowrap;
+    border: none;
+}
+.navbar.bg-body-tertiary {
+    background-color: #000000 !important;
+   
 }
 
+
+.navbar .active {
+    background-color: #fafafa; /* Fondo amarillo */
+    color: #3f148f; /* Texto morado */
+    font-weight: bold; /* Resaltar el texto */
+    border-radius: 2px;
+    padding: 8px 12px;
+}
+
+
+
+/* Lista de navegación */           
 .navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
+/* Elementos de la lista */
 .navbar li {
-    display: inline;
     margin: 0 15px;
 }
 
+/* Enlaces accesibles */
 .navbar a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-}
-
-.navbar a:focus, .navbar a:hover {
-    background-color: #575757;
-    padding: 5px;
+    padding: 8px 12px;
     border-radius: 5px;
+    outline: none;
 }
 
-/* Mejor contraste en los enlaces */
-a {
-    color: #0066cc;
+/* Foco visible SOLO cuando se usa teclado */
+.navbar a:focus-visible {
+    background-color: #601eb8;
+    color: rgb(7, 0, 0);
+    outline: 2px solid black;           
 }
 
-a:focus, a:hover {
-    color: #004099;
-    text-decoration: underline;
-}
-
-.navbar .active{
-    background-color: rgb(66, 63, 63);
+/* Hover y Foco */
+.navbar a:hover {   
+    background-color: #575757;
+    border-radius: 5px;
 }

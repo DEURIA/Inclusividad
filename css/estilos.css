@@ -3,7 +3,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    color: #5f5e5e;
+    color: #5e5e5f;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 
 /* Mejora la accesibilidad del encabezado */
 header {
-    background-color: #31190e;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -26,6 +26,15 @@ h1, h2 {
     text-align: center;
     color: #333;
 }
+
+span{
+    color: #000000;
+    font-family: Arial, sans-serif;
+
+}
+
+
+
 
 
 /* Mejora la accesibilidad del carrusel */
