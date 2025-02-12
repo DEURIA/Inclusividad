@@ -1,0 +1,78 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #5f5e5e;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mejora la accesibilidad del encabezado */
+header {
+    background-color: #31190e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+/* Mejora la accesibilidad del carrusel */
+.carousel img {
+    object-fit: cover;
+    height: 300px;
+}
+
+
+
+.carousel-item img {
+    width: 100%; /* Mantiene la imagen dentro del contenedor */
+    height: 350px; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Evita la pixelación y mantiene la proporción */
+    /*object-position:  top; /* Ajusta la posición de la imagen */
+    object-position: center top; /* Mantiene la imagen centrada en el contenedor.*/
+    transform: scale(0.5); /* Reduce el tamaño de la imagen */
+    transform: translateY(1%); /* Mueve la imagen hacia arriba */
+}
+
+
+
+/* Clase oculta pero accesible para etiquetas */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*titulo carrusel abajo*/
+#tituloCarrusel{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.carousel-indicators button {
+    width: 34px !important;  
+    height: 10px !important;
+    
+    background-color: #111111 !important; /* Color de la barra */
+   
+}
