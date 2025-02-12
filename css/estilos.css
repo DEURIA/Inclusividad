@@ -1,5 +1,4 @@
-
-/* Estilos generales */
+/***************************RESET BASICO***************************/
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -7,25 +6,46 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Mejora la accesibilidad del encabezado */
+/*************************HEADER**************************/
 header {
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
+    width: 100%;
 }
 
-/* Estilos del contenido principal */
+/************************************************* MAIN*******************************/
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
 }
 
-h1, h2 {
-    text-align: center;
-    color: #333;
+h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
 }
+
+h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+/************************************CARRUSEL*************************************/
 
 span{
     color: #000000;
@@ -33,9 +53,17 @@ span{
 
 }
 
+/* Carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    
 
-
-
+}
 
 /* Mejora la accesibilidad del carrusel */
 .carousel img {
@@ -43,19 +71,13 @@ span{
     height: 300px;
 }
 
-
-
 .carousel-item img {
     width: 100%; /* Mantiene la imagen dentro del contenedor */
     height: 350px; /* Ajusta la altura según necesites */
     object-fit: cover; /* Evita la pixelación y mantiene la proporción */
-    /*object-position:  top; /* Ajusta la posición de la imagen */
     object-position: center top; /* Mantiene la imagen centrada en el contenedor.*/
-    transform: scale(0.5); /* Reduce el tamaño de la imagen */
     transform: translateY(1%); /* Mueve la imagen hacia arriba */
 }
-
-
 
 /* Clase oculta pero accesible para etiquetas */
 .visually-hidden {
@@ -75,13 +97,106 @@ span{
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    
 }
 
 .carousel-indicators button {
     width: 34px !important;  
     height: 10px !important;
-    
     background-color: #111111 !important; /* Color de la barra */
-   
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute; /* Posición absoluta dentro del carrusel */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-8%); /* Ajuste para centrar completamente las flechas */
+    font-size: 1rem; /* Ajusta el tamaño de las flechas */
+    color: rgb(2, 0, 0); /* Asegura que las flechas sean visibles */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad */
+    border-radius: 50%; /* Flechas redondas */
+    padding: 10px;
+    z-index: 10; /* Para asegurarte de que las flechas estén sobre la imagen */
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+    display: block; /* Asegura que el texto no se oculte */
+}
+
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Diseño responsive con media queries */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 250px; /* Reducir altura en pantallas más pequeñas */
+    }
+
+    header {
+        padding: 0.8rem;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    #tituloCarrusel {
+        font-size: 0.9rem;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1.5rem; /* Reducir tamaño de las flechas */
+        padding: 0px; /* Ajusta el padding de las flechas */
+
+    }
+
+    /* Ajuste de los iconos dentro de los botones */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+     /* Ajustar el tamaño y visibilidad del texto dentro de las flechas */
+     .carousel-control-prev span, .carousel-control-next span {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .carousel-item img {
+        height: 200px; /* Ajusta aún más el tamaño */
+    }
+
+    h1, h2 {
+        font-size: 1rem;
+    }
+
+    #tituloCarrusel {
+        font-size: 0.8rem;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1.2rem; /* Reducir aún más el tamaño de las flechas */
+        padding: 0px; 
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Ajuste de los indicadores (líneas) */
+    .carousel-indicators button {
+        width: 30px !important; /* Hacer los indicadores más grandes en pantallas pequeñas */
+        height: 15px !important;
+    }
+    .carousel-control-prev span, .carousel-control-next span {
+        font-size: 0.6rem; /* Reducir el tamaño del texto */
+       
+    }
 }

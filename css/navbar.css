@@ -1,18 +1,23 @@
 /* NAVBAR ACCESIBLE */
 .navbar {
-    display: flex;
-    justify-content: center;
+    padding: 10px;
     background-color: #3f148f !important;
-    padding: 0.5rem 0;
-    gap: 10px;
-    flex-wrap: nowrap;
-    border: none;
 }
-.navbar.bg-body-tertiary {
-    background-color: #000000 !important;
-   
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
+.navbar.bg-body-tertiary {
+    background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.10s ease;
+}
 
 .navbar .active {
     background-color: #fafafa; /* Fondo amarillo */
@@ -22,10 +27,8 @@
     padding: 8px 12px;
 }
 
-
-
 /* Lista de navegación */           
-.navbar ul {
+/*.navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -34,26 +37,11 @@
     justify-content: center;
     gap: 20px;
     align-items: center;
-}
-
-/* Elementos de la lista */
-.navbar li {
-    margin: 0 15px;
-}
-
-/* Enlaces accesibles */
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 8px 12px;
-    border-radius: 5px;
-    outline: none;
-}
+}*/
 
 /* Foco visible SOLO cuando se usa teclado */
 .navbar a:focus-visible {
-    background-color: #601eb8;
+    background-color: #6c04f5;
     color: rgb(7, 0, 0);
     outline: 2px solid black;           
 }
@@ -62,4 +50,18 @@
 .navbar a:hover {   
     background-color: #575757;
     border-radius: 5px;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin: auto;
+    }
+
+    
 }
