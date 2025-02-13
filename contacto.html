@@ -89,15 +89,17 @@
           <div id="pet-description" class="error"></div>
         </div>
 
-        <div>
+
+       <div>
           <label for="services">Servicios seleccionados:</label>
-          <select id="services" name="services" required aria-required="true" required tabindex="5">
-            <option value="baño">Baño</option>
-            <option value="corte">Corte de pelo</option>
-            <option value="corte_uñas">Corte de uñas</option>
-            <option value="otros">Otros</option>
-          </select>
-        </div>
+        <select id="services" name="services[]" multiple required aria-required="true" tabindex="5">
+          <option value="baño">Baño</option>
+          <option value="corte">Corte de pelo</option>
+          <option value="corte_uñas">Corte de uñas</option>
+          <option value="otros">Otros</option>
+        </select>
+          <div id="services-error" class="error-message" aria-live="assertive"></div>
+       </div>
 
         <div>
           <label for="date">Fecha de cita:</label>
