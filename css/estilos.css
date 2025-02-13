@@ -99,7 +99,7 @@ span{
 
 .carousel-item img {
     width: 100%; /* Mantiene la imagen dentro del contenedor */
-    height: 350px; /* Ajusta la altura según necesites */
+    height: 500px; /* Ajusta la altura según necesites */
     object-fit: cover; /* Evita la pixelación y mantiene la proporción */
     object-position: center top; /* Mantiene la imagen centrada en el contenedor.*/
     transform: translateY(1%); /* Mueve la imagen hacia arriba */
