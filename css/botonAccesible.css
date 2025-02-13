@@ -9,10 +9,11 @@
     filter: invert(1) contrast(2); /*es filter aqui xq son imagenes*/
 }
 
+/*alto contraste*/
 .high-contrast input, .high-contrast textarea, .high-contrast select, .high-contrast label {
-    background-color: black !important;
-    color: yellow !important;
-    border: 2px solid white !important;
+    background-color:  #000000 !important;
+    color: #8A2BE2   !important;
+    border: 2px solid #8A2BE2 !important; /* Borde morado brillante */
 }
 
 
