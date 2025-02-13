@@ -88,10 +88,7 @@ span{
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1100px;
     position: relative;
-    
-
 }
 
 /* Mejora la accesibilidad del carrusel */
@@ -107,6 +104,8 @@ span{
     object-position: center top; /* Mantiene la imagen centrada en el contenedor.*/
     transform: translateY(1%); /* Mueve la imagen hacia arriba */
 }
+
+
 
 /* Clase oculta pero accesible para etiquetas */
 .visually-hidden {
