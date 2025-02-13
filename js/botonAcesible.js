@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.toggle("grayscale");
     }
 
+
     function toggleHighContrast() {
         document.body.classList.toggle("high-contrast"); //body
         // Aplicar a todas las imágenes
@@ -45,7 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 element.style.border = element.style.border === '2px solid white' ? '' : '2px solid white';
             }
         });
+        
+        // Aplicar alto contraste al nav
+       /*const nav = document.querySelector('nav');
+        if (nav) {
+            nav.classList.toggle("high-contrast"); // Cambiar la clase 'high-contrast' en el nav
+        }*/
+
     }
+
+
 
     function toggleNegativeContrast() { //invertir colorres logica diferente para form
         document.body.classList.toggle("negative-contrast"); //body
