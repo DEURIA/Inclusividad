@@ -9,6 +9,16 @@
     filter: invert(1) contrast(2); /*es filter aqui xq son imagenes*/
 }
 
+.high-contrast input, .high-contrast textarea, .high-contrast select, .high-contrast label {
+    background-color: black !important;
+    color: yellow !important;
+    border: 2px solid white !important;
+}
+
+
+
+
+
 .grayscale {
     filter: grayscale(100%);
 }
@@ -21,6 +31,14 @@
 .negative-contrast img {
     filter: invert(1) hue-rotate(180deg); /*es filter aqui xq son imagenes*/
 }
+
+.negative-contrast input, .negative-contrast textarea, .negative-contrast select,  .negative-contrast label {
+    background-color: black !important;
+    color: yellow !important;
+    border: 2px solid white !important;
+}
+
+
 
 
 .light-background {
