@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Sweety Paws</title>
+    <link rel="stylesheet" href="css/stylesServicios.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/botonAccesible.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header role="banner">
+        <nav class="navbar navbar-expand-md bg-body-tertiary" role="navigation" aria-label="Navegación principal">
+            <h1>Sweety Paws</h1>
+            <a href="#" class="instagram-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar u ocultar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-between w-50" role="menu">
+                        <li class="nav-item" role="menuitem">
+                            <a href="index.html" class="nav-link">Acerca de Nosotros</a>
+                        </li>
+                        <li class="nav-item" role="menuitem">
+                            <a href="servicios.html" class="nav-link active">Nuestros Servicios</a>
+                        </li>
+                        <li class="nav-item" role="menuitem">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main role="main">
+
+
+        <button id="accessibility-btn" i class="fas fa-wheelchair" ></button>
+        <div id="accessibility-menu">
+            <button class="botonAcesible" id="increase-text">Aumentar tamaño Letra</button>
+            <button  class="botonAcesible"  id="decrease-text">Disminuir tamaño Letra</button>
+            <button  class="botonAcesible" id="toggle-grayscale">Escala de grises</button>
+            <button class="botonAcesible"  id="toggle-high-contrast">Alto contraste</button>
+            <button  class="botonAcesible" id="toggle-negative-contrast">Contraste negativo</button>
+            <button  class="botonAcesible" id="toggle-light-background">Fondo claro</button>
+            <button  class="botonAcesible" id="toggle-underline">Subrayar enlaces</button>
+            <button  class="botonAcesible" id="toggle-readable-font">Fuente legible</button>
+            <button  class="botonAcesible" id="reset-accessibility">Restablecer</button>
+        </div>
+        
+
+
+        <section id="servicios" role="region" aria-labelledby="tituloServicios">
+            <h2 id="tituloServicios">Nuestros Servicios</h2>
+            <p>Ofrecemos una variedad de servicios de peluquería canina adaptados a las necesidades de cada mascota.</p>
+    
+            <div class="servicio">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/bañoCanino.mp4" type="video/mp4">
+                        <track src="subtitulos/banio.vtt" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-controls">
+                        
+
+                    </div>
+                </div>
+                <div class="explicacion-servicio">
+                    <h3>Baño y cepillado</h3>
+                    <p>Este servicio garantiza una limpieza profunda con productos hipoalergénicos diseñados para el cuidado de la piel y el pelaje de tu mascota. 
+                        Además, el cepillado ayuda a eliminar nudos y reducir la caída del pelo.</p>
+                </div>
+            </div>
+
+
+            <div class="servicio">
+                <div class="video-container">
+                    <video id="VideoConAudio2" controls>
+                        <source src="videos/videoConAudio2.mp4" type="video/mp4">
+                        <track src="subtitulos/VideoCon.vtt" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-controls">
+                       
+                    </div>
+
+                    <!-- Contenedor de subtítulos -->
+                   <!--<div class="subtitles-container">
+                        <div id="subtitles" class="subtitles"></div>
+                    </div>-->
+                </div>
+
+            
+                <div class="explicacion-servicio">
+                    <h3>Baño y cepillado</h3>
+                    <p>Este servicio garantiza una limpieza profunda con productos hipoalergénicos diseñados para el cuidado de la piel y el pelaje de tu mascota. Además, el cepillado ayuda a eliminar nudos y reducir la caída del pelo.</p>
+                </div>
+            </div>
+            
+    
+            <div class="servicio">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/corteCanino.mp4" type="video/mp4">
+                        <track src="subtitulos/corte.vtt" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-controls">
+                        
+
+                    </div>
+                </div>
+                <div class="explicacion-servicio">
+                    <h3>Corte de pelo</h3>
+                    <p>Realizamos cortes personalizados según la raza y tipo de pelaje de tu mascota, asegurando comodidad y una apariencia impecable.</p>
+                </div>
+            </div>
+    
+            <div class="servicio">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/corteUñasPerrito.mp4" type="video/mp4">
+                        <track src="subtitulos/unias.vtt" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-controls">
+                        
+
+                    </div>
+                </div>
+                <div class="explicacion-servicio">
+                    <h3>Corte de uñas</h3>
+                    <p>El corte de uñas evita problemas al caminar y posibles lesiones. Se realiza con herramientas seguras y 
+                    sin causar estrés a tu mascota.</p>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/revisando perro.mp4" type="video/mp4">
+                        <track src="subtitulos/unias.vtt" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-controls">
+                        
+                        
+                    </div>
+                </div>
+                <div class="explicacion-servicio">
+                    <h3>Limpieza de oídos</h3>
+                    <p>Eliminación de suciedad y prevención de infecciones.</p>
+                </div>
+            </div>
+
+
+            <div class="servicio">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/eliminaciondeParasitos.mp4" type="video/mp4">
+                        <track src="subtitulos/unias.vtt" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-controls">
+                        
+                        
+                    </div>
+                </div>
+                <div class="explicacion-servicio">
+                    <h3>Tratamientos especiales</h3>
+                    <p>Hidratación de piel y pelaje, eliminación de parásitos y más.</p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    
+    
+    <footer role="contentinfo">
+        <p>&copy; 2025 - Sweety Paws | Contacto: <a href="mailto:info@sweetypaws.com">info@sweetypaws.com</a> | Teléfono: 1234567890</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/funcionesServicios.js"></script>
+    <script src="js/botonAcesible.js"></script>
+  
+</body>
+</html>
