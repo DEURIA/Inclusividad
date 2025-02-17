@@ -1,34 +1,31 @@
+
 .servicio {
-    font-size: 18px;
-    background: #fff;
-    padding: 60px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px white;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    text-align: left;
-    gap: 70px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 20px; /* Espaciado entre el video y la explicación */
+    padding: 20px;
+}
+.video-container {
+    flex: 1; /* Ocupa el espacio disponible */
+    max-width: 560px; /* Tamaño máximo del video */
+}
+
+.video-container iframe {
+    width: 100%; /* Para que el video sea responsivo */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantiene la proporción del video */
+}
+.explicacion-servicio {
+    flex: 1;
+    max-width: 400px; /* Evita que el texto sea demasiado ancho */
 }
 
 h3 {
     color: rgb(93, 21, 134) !important;
 }
 
-/*.servicio video {
-    width: 200%;
-    max-width: 800px;
-    border-radius: 8px;
-    margin-top: 10px;
-}*/
-
-/*#VideoConAudio2 {
-    width: 200%;
-    max-width: 650px;
-    border-radius: 8px;
-    margin-top: 10px;
-}*/
 .servicio video, #VideoConAudio2 {
     width: 100%;
     max-width: 650px;
@@ -36,19 +33,7 @@ h3 {
     margin-top: 10px;
 }
 
-.explicacion-servicio {
-    flex: 1;
-    font-size: 25px;
-    text-align: justify;
-}
 
-.video-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
 
 .video-controls {
     display: flex;
@@ -75,29 +60,7 @@ h3 {
     background-color: #838080;
 }
 
-/* Subtítulos */
-.subtitles-container {
-    position: absolute;
-    left: 20px;
-    width: calc(0.3s - 1000px);
-    text-align: center;
-    margin-top: 20px;
-}
 
-.subtitles {
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    width: 100%;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.subtitles.hidden {
-    visibility: hidden;
-}
 
 /* ========== RESPONSIVE DESIGN ========== */
 
@@ -135,8 +98,17 @@ h3 {
 /* Para móviles (pantallas menores a 768px) */
 @media screen and (max-width: 768px) {
     .servicio {
-        padding: 20px;
-        gap: 20px;
+       /* padding: 20px;
+        gap: 20px;*/
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-container {
+        max-width: 100%;
+    }
+
+    .explicacion-servicio {
+        max-width: 100%;
     }
 
     .explicacion-servicio {
@@ -215,9 +187,8 @@ h3 {
 /* Para pantallas extra grandes (mayores a 1600px) */
 @media screen and (min-width: 1600px) {
     .servicio {
-        max-width: 800px; /* Reduce aún más el ancho */
-        padding: 30px;
-        gap: 20px;
+        max-width: 1400px; /* Limita el ancho para que no se vea demasiado extendido */
+        margin: auto; /* Centra el contenido */
     }
 
     .explicacion-servicio {
