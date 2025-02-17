@@ -16,15 +16,21 @@ h3 {
     color: rgb(93, 21, 134) !important;
 }
 
-.servicio video {
+/*.servicio video {
     width: 200%;
     max-width: 800px;
     border-radius: 8px;
     margin-top: 10px;
-}
+}*/
 
-#VideoConAudio2 {
+/*#VideoConAudio2 {
     width: 200%;
+    max-width: 650px;
+    border-radius: 8px;
+    margin-top: 10px;
+}*/
+.servicio video, #VideoConAudio2 {
+    width: 100%;
     max-width: 650px;
     border-radius: 8px;
     margin-top: 10px;
@@ -110,14 +116,19 @@ h3 {
     }
 
     .servicio video, #VideoConAudio2 {
-        width: 100%;
-        max-width: 600px;
+        width: 90%;
+        /*max-width: 600px;*/
+        text-align: center;
     }
 
     .video-controls {
         flex-direction: column;
         align-items: center;
         gap: 5px;
+    }
+    .servicio video, #VideoConAudio2 {
+        width: 90%;
+        max-width: 400px;
     }
 }
 
@@ -174,5 +185,52 @@ h3 {
         width: 100%;
         padding: 8px;
         font-size: 13px;
+    }
+}
+/* Para pantallas grandes (mayores a 1440px) */
+@media screen and (min-width: 1440px) {
+    .servicio {
+        max-width: 900px; /* Reduce el ancho total */
+        padding: 40px;
+        gap: 30px;
+        flex-wrap: wrap; /* Permite que los elementos se acomoden mejor */
+    }
+
+    .explicacion-servicio {
+        font-size: 20px; /* Reduce el tamaño del texto */
+        flex: 1 1 50%; /* Limita su tamaño */
+    }
+
+    .video-container {
+        flex: 1 1 50%; /* Reduce el tamaño del contenedor de video */
+        max-width: 400px; /* Limita su ancho */
+    }
+
+    .servicio video, #VideoConAudio2 {
+        width: 100%; /* Se ajusta al tamaño del contenedor */
+        max-width: 400px; /* Evita que el video crezca demasiado */
+    }
+}
+
+/* Para pantallas extra grandes (mayores a 1600px) */
+@media screen and (min-width: 1600px) {
+    .servicio {
+        max-width: 800px; /* Reduce aún más el ancho */
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .explicacion-servicio {
+        font-size: 18px;
+        flex: 1 1 45%;
+    }
+
+    .video-container {
+        flex: 1 1 45%;
+        max-width: 350px;
+    }
+
+    .servicio video, #VideoConAudio2 {
+        max-width: 350px;
     }
 }
