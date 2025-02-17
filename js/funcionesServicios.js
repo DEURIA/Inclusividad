@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const subtitleDisplay = document.createElement('div');
         subtitleDisplay.classList.add('subtitles');
         subtitleDisplay.style.position = 'absolute';
-        subtitleDisplay.style.top = '1500px';
+        subtitleDisplay.style.top = '830px';
         subtitleDisplay.style.left = '10px';
         subtitleDisplay.style.color = 'rgb(93, 21, 134)';
         subtitleDisplay.style.fontSize = '20px';
